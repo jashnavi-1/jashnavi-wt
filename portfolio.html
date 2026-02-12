@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSE Student Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-indigo-600 text-white p-4">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-xl font-bold">CSE Portfolio</h1>
+      <div class="space-x-4 mt-2 md:mt-0">
+        <a href="#profile" class="hover:underline">Profile</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#experience" class="hover:underline">Experience</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile" class="container mx-auto p-6 text-center">
+    <img src="https://via.placeholder.com/150" 
+         class="mx-auto rounded-full mb-4 border-4 border-indigo-500" 
+         alt="Profile Photo">
+
+    <h2 class="text-3xl font-bold mb-2">Induja
+</h2>
+    <p class="text-lg font-semibold">Computer Science Engineering Student</p>
+    <p class="mt-4 max-w-2xl mx-auto">
+      I am a CSE student with strong interest in software development, web technologies, and problem solving.
+      I am eager to learn new technologies and build real-world applications.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-white py-8">
+    <div class="container mx-auto p-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Technical Skills</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Programming</h3>
+          <p>C, C++, Java, Python</p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Web Technologies</h3>
+          <p>HTML5, CSS3, Tailwind CSS, JavaScript</p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Databases</h3>
+          <p>MySQL, Basic SQL</p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Computer Science</h3>
+          <p>DSA, OOPS, DBMS, OS, CN</p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Tools</h3>
+          <p>Git, VS Code, GitHub</p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+          <h3 class="font-semibold text-lg">Soft Skills</h3>
+          <p>Communication, Team Work, Problem Solving</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Experience & Training</h2>
+
+    <div class="space-y-4 max-w-3xl mx-auto">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Web Development Training</h3>
+        <p class="text-sm text-gray-600">Online / College Training | 2025</p>
+        <p>
+          Learned HTML, CSS, Tailwind CSS and basic JavaScript to develop responsive websites.
+        </p>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Academic Mini Projects</h3>
+        <p class="text-sm text-gray-600">CSE Department | 2024 - 2025</p>
+        <p>
+          Completed multiple academic projects related to web development and programming.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white py-8">
+    <div class="container mx-auto p-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Academic Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h3 class="font-semibold">Personal Portfolio Website</h3>
+          <p>
+            Designed a responsive portfolio using HTML5, CSS3, and Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h3 class="font-semibold">Student Management System</h3>
+          <p>
+            Developed a basic system using HTML, CSS, JavaScript, and MySQL.
+          </p>
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h3 class="font-semibold">Library Management System</h3>
+          <p>
+            Mini project for managing books and students using basic database concepts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Contact Information</h2>
+
+    <div class="max-w-md mx-auto bg-white p-6 rounded shadow space-y-4">
+      <p><strong>Email:</strong> yourname@gmail.com</p>
+      <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
+      <p><strong>GitHub:</strong> github.com/yourname</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white text-center p-4 mt-8">
+    <p>© 2026 Your Name | CSE Student Portfolio</p>
+  </footer>
+
+</body>
+</html>
