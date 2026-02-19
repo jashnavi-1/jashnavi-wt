@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blog Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .blog-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .comment-section {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .comment {
+            background: #f9f9f9;
+            padding: 12px;
+            border-left: 4px solid #007bff;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+        input {
+            margin-top: 10px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="blog-container">
+    <h1>Understanding JavaScript Events</h1>
+    <div class="meta">Author: John Doe</div>
+    
+    <article>
+        <p>JavaScript events are actions that can be detected by your web application. Examples include clicks, key presses, and mouse movements. By using event listeners, you can make your website respond to user behavior in real-time.</p>
+    </article>
+
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <div id="comment-list">
+            <div class="comment">Great article! Very helpful.</div>
+        </div>
+
+        <input type="text" id="comment-input" placeholder="Write a comment...">
+        <button onclick="addComment()">Submit</button>
+    </div>
+</div>
+
+<script>
+    function addComment() {
+        const input = document.getElementById('comment-input');
+        const list = document.getElementById('comment-list');
+
+        if (input.value.trim() !== "") {
+            // Create a new comment div
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.textContent = input.value;
+
+            // Add to the list and clear input
+            list.appendChild(newComment);
+            input.value = "";
+        } else {
+            alert("Please enter a comment before submitting.");
+        }
+    }
+</script>
+
+</body>
+</html>
